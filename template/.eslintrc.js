@@ -4,10 +4,17 @@ module.exports = {
   root: true,
   parser: 'babel-eslint',
   parserOptions: {
-    sourceType: 'module'
+    'ecmaVersion': 7,
+    'sourceType': "module",
+    'allowImportExportEverywhere': false,
+    'ecmaFeatures': {
+      'jsx': true,
+      'modules': true
+    }
   },
   env: {
     browser: true,
+    node: true
   },
   {{#if_eq lintConfig "standard"}}
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
