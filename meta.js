@@ -44,6 +44,10 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
+    "state": {
+      "type": "confirm",
+      "message": "Install vuex (state-management)?"
+    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
